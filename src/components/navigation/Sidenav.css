@@ -1,0 +1,130 @@
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1;
+  min-height: 100vh;
+  padding-right: 50px;
+  border-right: 0.6px solid rgba(128, 128, 128, 0.516);
+}
+
+.sidenav__logo {
+  width: 100px;
+  margin: 25px;
+}
+
+.sidenav__buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidenav__button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: rgb(233, 233, 233);
+  background: 0;
+  border: 0;
+  margin: 5px 10px 5px 10px;
+  padding: 10px 15px 10px 15px;
+  border-radius: 15px;
+  width: 100%;
+  font-size: 25px;
+}
+.nav__active {
+  font-weight: bolder;
+  color: white;
+}
+.sidenav__button:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.128);
+}
+
+.sidenav__button > span {
+  font-size: 20px;
+  font-weight: 300;
+  margin-left: 10px;
+}
+
+.sidenav__more {
+  margin-top: 10px;
+}
+
+.logout__button {
+  font-size: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.211);
+  border: 0;
+  padding: 10px;
+}
+
+.logout__button:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.424);
+}
+
+.res__sidenav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1;
+  height: 100vh;
+  border-right: 0.6px solid rgba(128, 128, 128, 0.516);
+  transition: width 1s ease;
+}
+
+.res__sidenav > img {
+  display: none;
+}
+
+.res__sidenav > .sidenav__buttons > button > span {
+  display: none;
+}
+
+.sidebar {
+  display: flex;
+}
+
+.create__title {
+  color: red !important;
+}
+
+/* Media quries */
+@media screen and (max-width: 1150px) {
+  .sidenav__logo {
+    display: none;
+  }
+  .res__sidenav > .sidenav__logo {
+    margin: 0 !important;
+  }
+  .sidenav {
+    padding: 20px;
+    width: fit-content;
+  }
+
+  .res__sidenav {
+    padding: 20px;
+    width: fit-content;
+  }
+
+  .logout__button {
+    display: none;
+  }
+  .sidenav__button {
+    margin: 15px 0px;
+    padding: 15px 0px;
+    height: 25px;
+    width: 25px;
+  }
+  .sidenav__buttons button span {
+    display: none;
+  }
+}
+
+/* @media (max-width: 1240px) {
+  .sidenav {
+    position: relative;
+  }
+} */

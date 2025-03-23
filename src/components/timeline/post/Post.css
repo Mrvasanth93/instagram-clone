@@ -1,0 +1,95 @@
+.post {
+  width: 500px;
+  margin: 30px auto 10px auto;
+  font-size: 12px;
+}
+
+.post__header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.post__headerAuthor {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+}
+.post__time {
+  color: gray;
+  font-size: small;
+}
+.post__relation {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.post__image > img {
+  width: 100%;
+  border-radius: 6px;
+  border: 0.6px solid rgba(128, 128, 128, 0.516);
+}
+
+.post__footerIcons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.post__iconsMain{
+  font-size: 40px;
+}
+.post__iconSave{
+  font-size: 35px;
+
+}
+.postIcon {
+  padding: 7px;
+}
+
+.postIcon :hover {
+  cursor: pointer;
+}
+
+/* Drop down menu styles */
+/* .MuiPopover-root{
+  position: 'absolute';
+  top: '50%';
+  left: '50%';
+  transform: 'translate(-50%, -50%)';
+  width: 400;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  cursor: pointer;
+  
+}
+
+.MuiMenuItem-root:hover {
+  background-color: #f0f0f0;
+  display: block;
+} */
+
+.commentDiv{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  margin-top: 10px;
+}
+
+.commentInput{
+  background: none;
+  border: none;
+  margin-top: 10px;
+  padding: 5px 0px 15px 0px;
+  flex: 1;
+  color: white;
+}
+
+.commentDiv > input[type=text]:focus{
+  border: none;
+  outline: none;
+}

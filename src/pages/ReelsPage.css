@@ -1,0 +1,52 @@
+.reels__timeline {
+    flex: 0.35;
+    margin: auto;
+  }
+  
+.video-container{
+    height: 90vh;
+    margin-top: 20px;
+    border-radius: 20px; 
+    overflow: scroll;
+    scroll-snap-type: y mandatory !important;
+    scrollbar-width: none;
+}
+
+.video-container::-webkit-scrollbar {
+    display: none !important;
+}
+
+.videos{
+    position: relative;
+}
+.mute_btn{
+    position: absolute;
+    top: 5%;
+    right: 20%;
+}
+.fa{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 4%;
+    left: 20%;
+    font-size: 14px;
+    flex-direction: column; 
+}
+.reel_ava{
+    display: flex;
+    align-items: center;
+}
+.fa h4{
+    margin: 0;
+    color: white;
+    font-weight:500; 
+    margin-left: 15%;
+}
+.desc_reel{
+    margin-top: 7px; 
+}
+
+@media(max-width:1050px){
+    
+}

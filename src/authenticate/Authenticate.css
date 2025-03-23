@@ -1,0 +1,60 @@
+.authenticate {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+}
+
+.auth__left {
+  flex: 0.3;
+  text-align: center;
+}
+
+.auth__right {
+  flex: 0.32;
+}
+
+.auth__left > img {
+  width: 400px;
+  margin-top: 40px;
+}
+
+.auth__more {
+  border: 1px solid grey;
+  padding: 20px;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 13px;
+  text-align: center;
+}
+
+.auth__more > span {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.auth__more > span > button {
+  background: 0;
+  border: 0;
+  font-weight: bolder;
+  color: #0095f6;
+}
+
+.auth__more > span > button:hover {
+  cursor: pointer;
+}
+
+.get__app {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 10px;
+  justify-content: center;
+  text-align: center;
+}
+.app_links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}

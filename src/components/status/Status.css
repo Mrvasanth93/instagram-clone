@@ -1,0 +1,97 @@
+:root {
+  --my-gradient: linear-gradient(to bottom, #ff8a00, #da1b60); /* define gradient variable */
+}
+.avatar-box {
+  width: 70px;
+  height: 70px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  position: relative;
+  background: var(--my-gradient); 
+  border: 2px solid #000;
+  
+}
+.avatar-profile-image {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin: 3px;
+  outline: 4px solid #000;  
+}
+
+.carousel-status {
+  padding: 16px 0px;
+}
+.carousel-body {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  /* overflow-y: none; */
+  height: 100px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 8px;
+
+  scroll-behavior: smooth;
+}
+.carousel-body::-webkit-scrollbar {
+  display: none;
+}
+.avatar-detail {
+  margin-left: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.avatar-name {
+  font-size: 12px;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 60px;
+}
+.check {
+  position: relative;
+  margin-top: 10px;
+  width: 630px;
+}
+.arrow-btn {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: #bebdbdb0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  z-index: 999;
+  cursor: pointer;
+}
+.arrow-btn img {
+  width: 10px;
+  height: 10px;
+}
+.left-icon {
+  left: -10px;
+  top: 25px;
+}
+.right-icon {
+  right: -30px;
+  top: 25px;
+}
+
+@media (max-width: 720px) {
+  .check {
+    width: 500px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .check {
+    width: 500px;
+  }
+}

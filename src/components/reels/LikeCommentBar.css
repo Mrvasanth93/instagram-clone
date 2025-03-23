@@ -1,0 +1,23 @@
+
+.likebar__iconsMain{
+      display: flex;
+      position: absolute;
+      right: 5%;
+      bottom: 1%;
+      flex-direction: column;
+      align-items: center;
+    font-size: 40px;
+    font-weight: 100;
+  }
+  .likebar__iconsMain > span{
+    font-size: 12px;
+  }
+  .likebarIcon {
+    padding: 7px;
+    margin-top: 12px;
+  }
+  
+  .likebarIcon :hover {
+    cursor: pointer;
+  }
+  

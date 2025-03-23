@@ -1,0 +1,80 @@
+.week {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+.notifications {
+  position: fixed;
+  top: 0;
+  left: 90px;
+  height: 100vh;
+  font-size: 12px;
+  background-color: rgb(7, 7, 7);
+  padding: 10px 30px;
+  width: 400px;
+  z-index: 999;
+  overflow-y: scroll;
+  border: 1px solid rgb(80, 78, 78);
+  animation: spin 500ms ease-in-out;
+}
+
+@keyframes spin {
+  from {
+    transform: translateX(-100px);
+  }
+}
+
+.user {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.timeline {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.timestamp {
+  color: gray;
+}
+
+.button {
+  font-size: 10px !important;
+  font-weight: 700 !important;
+}
+
+.profile__Details {
+  display: flex;
+  flex-direction: column;
+}
+
+.date {
+  font-size: 16px;
+}
+
+.container {
+  padding-bottom: 20px;
+  border-bottom: 1px solid gray;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cancel__x {
+  font-size: 20px;
+  font-weight: 700px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+@media (max-width: 1150px) {
+  .notifications {
+    left: 70px;
+  }
+}

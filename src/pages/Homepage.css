@@ -1,0 +1,25 @@
+.homepage {
+  display: flex;
+  flex-direction: row;
+}
+
+.homepage__navWraper {
+  position: relative;
+  flex: 0.2;
+  z-index: 999;
+}
+
+.homepage__timeline {
+  height: 100vh;
+  overflow-y: scroll;
+  flex: 0.8;
+}
+
+@media (max-width: 1150px) {
+  .homepage__navWraper {
+    flex: 0.1;
+  }
+  .homepage__timeline {
+    flex: 1;
+  }
+}
